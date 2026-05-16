@@ -4,7 +4,6 @@ const StackLayout = () => {
   return (
     <Stack
       screenOptions={{
-        // headerShown: false,
         headerShadowVisible: false,
         headerTitleAlign: "center",
       }}
