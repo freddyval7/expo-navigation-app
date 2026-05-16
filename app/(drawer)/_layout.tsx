@@ -22,6 +22,16 @@ const DrawerLayout = () => {
         }}
       />
       <Drawer.Screen
+        name="(tabs)" // This is the name of the page and must match the url from root
+        options={{
+          headerShown: false,
+          drawerLabel: "Tabs + Stack",
+          drawerIcon: ({ color, size }) => {
+            <Ionicons name="person-circle-outline" size={size} color={color} />;
+          },
+        }}
+      />
+      <Drawer.Screen
         name="schedule/index" // This is the name of the page and must match the url from root
         options={{
           drawerLabel: "Schedule",
